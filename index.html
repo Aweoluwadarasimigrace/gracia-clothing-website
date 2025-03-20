@@ -1,13 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Beauty website</title>
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+    <div class="first-header">
+        <div class="header-text">
+            Up to 40% off Best-Selling Furniture. <a href="">Shop Now</a>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="nav-flexwrapper">
+
+
+                <div class="menu-bar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="dropdown-list">
+                    <ul class="ulWrapper">
+                        <li class="dropdown-flex" onclick="toggleContent()">
+                            Shop <i class="fa-solid fa-angle-down"></i>
+
+
+
+
+
+                            <ul class="dropdown-items" id="hiddenContent" >
+
+                                <ul class="item-wrapper1">
+                                    <ul class="item-wrapper2">
+                                        <ul class="item1">
+                                            <h3>Women Clothings</h3>
+                                            <li><a href="">Women</a></li>
+                                            <li><a href="">Coats & Jackets</a></li>
+                                            <li><a href="">Dresses</a></li>
+                                            <li><a href="">Hoodies & Sweatshirts</a></li>
+                                            <li><a href="">Jeans</a></li>
+                                            <li><a href="">Knitwears</a></li>
+                                        </ul>
+                                        <ul class="item2">
+                                            <h3>Men Clothings</h3>
+                                            <li><a href="">Coats & Jackets</a></li>
+                                            <li><a href="">Hoodies</a></li>
+                                            <li><a href="">Pants</a></li>
+                                            <li><a href="">Shirts</a></li>
+                                            <li><a href="">Shorts</a></li>
+                                            <li><a href="">T-Shirts</a></li>
+                                        </ul>
+                                    </ul>
+                                    <ul class="imageWrap">
+                                        <img src="./images/gropdown-imgimage1.jpg" alt="">
+                                        <span class="span">NEW PRODUCTS</span>
+                                        <span class="span2">The Best Collections</span>
+                                    </ul>
+
+                                </ul>
+
+                                <ul class="item-wrapper1">
+                                    <ul class="item-wrapper2">
+                                        <ul class="item1">
+                                            <h3>Shop By Collections</h3>
+                                            <li><a href="">Fall Collection</a></li>
+                                            <li><a href="">Pastel Collection</a></li>
+                                            <li><a href="">Spring Collection</a></li>
+                                            <li><a href="">Summer Collection</a></li>
+                                            <li><a href="">Vintage Collection</a></li>
+                                            <li><a href="">Winter Collection</a></li>
+                                        </ul>
+                                        <ul class="item2">
+                                            <h3>Shop By Activity</h3>
+                                            <li><a href="">Back to School</a></li>
+                                            <li><a href="">Casual Clothings</a></li>
+                                            <li><a href="">Sport Clothings</a></li>
+                                            <li><a href="">Summer Clothings</a></li>
+                                            <li><a href="">Vacation & Wedding</a></li>
+                                            <li><a href="">Work Clothings
+                                                </a></li>
+                                        </ul>
+                                    </ul>
+                                    <ul class="imageWrap1">
+                                        <img src="./images/gropdown-imgimage2 (1) (1) (2).jpg" alt="">
+                                        <span class="span3">ENJOY FREE SHIPPING</span>
+                                        <span class="span4">Men Pick From $15</span>
+                                    </ul>
+
+                                </ul>
+
+
+
+
+
+
+                            </ul>
+                        </li>
+
+                        <li class="dropdown-flex">Women</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="headerlogo">
+                <img src="./images/Black___White_Minimal_Business_Logo-removebg-preview (1).png" alt="" class="image">
+            </div>
+
+            <div class="headerIconWrapper">
+
+            </div>
+
+        </nav>
+    </header>
 </body>
+<script>
+
+    function toggleContent() {
+        let content = document.getElementById('hiddenContent');
+        content.classList.toggle('show');
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // let hideTimeout;
+    // function displayContent() {
+    //     let content = document.getElementById('hiddenContent');
+    //     content.style.display = 'block';
+    // }
+
+
+    // function hideContent() {
+
+    //     hideTimeout = setTimeout(() => {
+    //         let dropdown = document.getElementById('hiddenContent');
+    //         dropdown.style.visibility = 'hidden'; // Hide after a slight delay
+    //     }, Infinity); // Delay to improve user experience
+    // }
+
+    // function cancelHideDropdown() {
+    //     clearTimeout(hideTimeout); // Prevent accidental closing
+    // }
+        // let hideContent = document.getElementById('hiddenContent');
+        // hideContent.style.visibility = 'hidden';
+        
+    
+</script>
 </html>

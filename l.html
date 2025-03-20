@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Full-Width Dropdown</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .nav {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 50px; /* Appears below the nav */
+            left: 0;
+            width: 100%; /* Full width */
+            background-color: #2196F3;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+<div 
+    class="nav" 
+    onmouseover="showDropdown()" 
+    onmouseout="hideDropdownWithDelay()"
+>
+    Hover for Full-Width Dropdown
+</div>
+
+<div 
+    class="dropdown" 
+    id="dropdown" 
+    onmouseover="cancelHideDropdown()" 
+    onmouseout="hideDropdownWithDelay()"
+>
+    I'm a Full-Width Dropdown! 🚀
+</div>
+
+<script>
+    let hideTimeout;
+
+    function showDropdown() {
+        const dropdown = document.getElementById('dropdown');
+        dropdown.style.display = 'block'; // Show the dropdown
+    }
+
+    function hideDropdownWithDelay() {
+        hideTimeout = setTimeout(() => {
+            const dropdown = document.getElementById('dropdown');
+            dropdown.style.display = 'none'; // Hide after a slight delay
+        }, 300); // Delay to improve user experience
+    }
+
+    function cancelHideDropdown() {
+        clearTimeout(hideTimeout); // Prevent accidental closing
+    }
+</script>
+
+</body>
+</html>
