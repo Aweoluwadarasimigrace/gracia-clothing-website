@@ -43,6 +43,7 @@ nav{
     display: flex;
     justify-content: space-between;
     gap: 1.4em;
+    align-items: center;
 }
 
 .fa-bars{
@@ -187,6 +188,65 @@ width: 110px;
 .menu-bar2{
     display: none;
 }
+
+
+.menubar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 300px;
+    height: 99.9vh;
+    background-color: white;
+    padding: 50px 20px;
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+
+}
+
+.menu-list{
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    gap: 2em;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.x{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+#x{
+    display: none;
+}
+
+.logo{
+    width: 90px;
+}
+
+
+.menu-list li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.menubar{
+    visibility: hidden;
+}
+
+
+.menu-bar{
+    background-color: white;
+    padding: 20px;
+}
+
+
 
 
 @media(max-width:1440px){

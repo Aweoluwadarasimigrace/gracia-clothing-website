@@ -23,7 +23,7 @@
             <div class="nav-flexwrapper">
 
 
-                <div class="menu-bar">
+                <div class="menu-bar" onclick="displayMenu()">
                     <i class="fa-solid fa-bars"></i>
                 </div>
                 <div class="dropdown-list">
@@ -102,13 +102,28 @@
                 </div>
             </div>
 
+            <div class="menubar" id="hiddenMenu">
+                <div class="x"> <img src="./images/Black___White_Minimal_Business_Logo-removebg-preview (1).png" alt="" class="logo">
+                    <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                </div>
+                <ul class="menu-list">
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">women</a></li>
+                    <li><a href="">Men</a></li>
+                    <li><a href="">Kids</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">About Us</a></li>
+
+                </ul>
+            </div>
+
             <div class="headerlogo">
                 <a href="./index.html"> <img src="./images/Black___White_Minimal_Business_Logo-removebg-preview (1).png"
                         alt=""></a>
             </div>
 
             <div class="headerIconWrapper">
-                <div class="menu-bar2">
+                <div class="menu-bar2" onclick="displayMenu()">
                     <i class="fa-solid fa-bars"></i>
                 </div>
                 <div class="search">
@@ -381,6 +396,16 @@
         content.classList.toggle('show');
     }
 
+
+    function displayMenu() {
+        let display = document.getElementById('hiddenMenu');
+        display.style.visibility = 'visible';
+        
+    }
+    function hideMenu() {
+        let display = document.getElementById('hiddenMenu');
+        display.style.visibility = 'hidden';
+    }
 
 </script>
 
